@@ -1,0 +1,10 @@
+var PRODUCTS = [
+  		{NO: "1",college: "국어국문학과", section:"전공선택",subject:"전공선택",number:"51216",class:"01",title:"구비문학과스토리텔링",grade:"4",credit:3,professor:"전이정",DoN:"주간",type:"",time:"월02,03,04/5-203",RoP:0,RfC:22,permission:"N",pluralMajor:"N",minor:"N"},
+        {NO: "2",college: "국어국문학과", section:"전공선택",subject:"전공선택",number:"52004",class:"01",title:"국문학사1",grade:"2",credit:3,professor:"조세형",DoN:"주간",type:"",time:"월02,03,04/5-203",RoP:0,RfC:22,permission:"N",pluralMajor:"N",minor:"N"},
+        {NO: "3",college: "국어국문학과", section:"전공선택",subject:"전공선택",number:"52009",class:"01",title:"고전시가론",grade:"3",credit:3,professor:"조세형",DoN:"주간",type:"",time:"월02,03,04/5-203",RoP:0,RfC:22,permission:"N",pluralMajor:"N",minor:"N"},
+        {NO: "4",college: "국어국문학과", section:"전공선택",subject:"전공선택",number:"52034",class:"01",title:"고전시가론",grade:"1",credit:3,professor:"목정수",DoN:"주간",type:"",time:"월02,03,04/5-203",RoP:0,RfC:22,permission:"N",pluralMajor:"N",minor:"N"},
+        {NO: "5",college: "국어국문학과", section:"전공선택",subject:"전공선택",number:"52037",class:"01",title:"현대소설론",grade:"2",credit:3,professor:"이동하",DoN:"주간",type:"",time:"월02,03,04/5-203",RoP:0,RfC:22,permission:"N",pluralMajor:"N",minor:"N"},
+        {NO: "6",college: "국어국문학과", section:"전공선택",subject:"전공선택",number:"52048",class:"01",title:"새롭게읽는고전문학",grade:"2",credit:3,professor:"서유경",DoN:"주간",type:"",time:"월02,03,04/5-203",RoP:0,RfC:22,permission:"N",pluralMajor:"N",minor:"N"},
+        {NO: "7",college: "국어국문학과", section:"전공선택",subject:"전공선택",number:"52049",class:"01",title:"문자와언어생활",grade:"4",credit:3,professor:"김영욱",DoN:"주간",type:"",time:"월02,03,04/5-203",RoP:0,RfC:22,permission:"N",pluralMajor:"N",minor:"N"},
+        {NO: "8",college: "국어국문학과", section:"전공선택",subject:"전공선택",number:"52050",class:"01",title:"희곡과영상문학",grade:"2",credit:3,professor:"진수미",DoN:"주간",type:"",time:"월02,03,04/5-203",RoP:0,RfC:22,permission:"N",pluralMajor:"N",minor:"N"},
+];

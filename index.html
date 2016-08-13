@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Hello React!</title>
+    <script src="js/react.js"></script>
+    <script src="js/react-dom.js"></script>
+    <script src="https://npmcdn.com/babel-core@5.8.38/browser.min.js"></script>
+    <script src="js/datas.js"></script>
+  </head>
+  <body>
+    <div id="container"></div>
+    <script type="text/babel">
+
+    var ProductCategoryRow = React.createClass({
+  render: function() {
+    return (<tr><th>{this.props.category}</th></tr>);
+  }
+});
+
+var ProductRow = React.createClass({
+  render: function() {
+
+  return (
+      <tr>
+        <td>{this.props.product.NO}</td>
+        <td>{this.props.product.college}</td>
+        <td>{this.props.product.section}</td>
+        <td>{this.props.product.subject}</td>
+        <td>{this.props.product.number}</td>
+        <td>{this.props.product.class}</td>
+        <td>{this.props.product.title}</td>
+        <td>{this.props.product.grade}</td>
+        <td>{this.props.product.credit}</td>
+        <td>{this.props.product.professor}</td>
+        <td>{this.props.product.DoN}</td>
+        <td>{this.props.product.type}</td>
+        <td>{this.props.product.time}</td>
+        <td>{this.props.product.RoP}</td>
+        <td>{this.props.product.RfC}</td>
+        <td>{this.props.product.permission}</td>
+        <td>{this.props.product.pluralMajor}</td>
+        <td>{this.props.product.minor}</td>
+      </tr>
+    );
+  }
+});
+
+
+    var mainStyle={
+        color: '#0000',
+        textAlign: 'center',fontSize: 12,
+        fontFamily: "Microsoft YaHei UI",cursor: 'pointer',float:'left',lineHeight:'30px',
+    };
+
+var ProductTable = React.createClass({
+  render: function() {
+    var rows = [];
+
+    this.props.products.forEach(function(product) {
+      rows.push(<ProductRow product={product} key={product.NO} />);
+    });
+    return (
+      <table style={mainStyle}>
+        <thead>
+          <tr>
+                            <th>NO</th>
+                            <th>학부(과)</th>
+                            <th>교과구분</th>
+                            <th>세부영역</th>
+                            <th>교과번호</th>
+                            <th>분반</th>
+                            <th>교과목명</th>
+                            <th>학년</th>
+                            <th>학점</th>
+                            <th>담당교수</th>
+                            <th>주야</th>
+                            <th>강의유형</th>
+                            <th>강의시간및강의실</th>
+                            <th>수강인원</th>
+                            <th>수강정원</th>
+                            <th>타과허용</th>
+                            <th>복수전공</th>
+                            <th>부전공</th>
+                            <th>융복합</th>
+          </tr>
+        </thead>
+        <tbody>{rows}</tbody>
+      </table>
+    );
+  }
+});
+
+var SearchBar = React.createClass({
+  render: function() {
+    return (
+      <form>
+        <input type="text" placeholder="Search..." />
+        <p>
+          <input type="checkbox" />
+          {' '}
+          Only show products in stock
+        </p>
+      </form>
+    );
+  }
+});
+
+var FilterableProductTable = React.createClass({
+  render: function() {
+    return (
+      <div>
+        <SearchBar />
+        <ProductTable products={this.props.products} />
+      </div>
+    );
+  }
+});
+
+
+
+ 
+ReactDOM.render(
+  <FilterableProductTable products={PRODUCTS} />,
+  document.getElementById('container')
+);
+    </script>
+  </body>
+</html>
